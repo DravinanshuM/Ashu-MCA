@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        nav{
+            width:100vw;
+            height:10vh;
+            background-color: darkorchid;
+        }
+        nav ul{
+            float:right;
+            margin-right: 5rem;
+        }
+        nav ul li{
+            display:inline-block;
+            line-height: 5rem;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color:white;
+            padding:0.7rem 2rem;
+            border-radius: 10%;
+            font-size:1.5rem;
+        }
+        nav ul li a.active, a:hover{
+            background-color:brown;
+        }
+        nav label.logo{
+            color:white;
+            line-height:4rem;
+            padding: 0rem 4rem;
+            font-size:2rem;
+            text-transform: uppercase;
+            text-decoration: underline rgb(14, 240, 75) wavy 2px;
+        }
+        nav #check{
+            display: none;
+        }
+        nav #check:checked ~ ul{
+            left:0px;
+        }
+        nav label#checkbtn{
+              color:white;
+              float:right;
+              line-height:4rem;
+              margin-right: 2rem;
+              font-size:1.5rem;
+              display: none;
+        }
+       
+        @media screen and (max-width:1355px) {
+             nav label.logo{
+                 font-size: 1.7rem;
+             }
+             nav ul li a{
+                font-size:1.2rem;
+             }
+        }
+        @media screen and (max-width:1230px) {
+            nav{
+             height: 8vh;
+           }
+           nav label.logo{
+               font-size:1.4rem;
+           }
+           nav ul li{
+               line-height: 4rem;
+           }
+            nav label.log{
+                font-size:1.4rem;
+            }
+            nav ul li a{
+                font-size:0.9rem;
+             }
+        }
+        @media screen and (max-width:1100px) {
+            nav label#checkbtn{
+                display: block;
+                font-size:2rem;
+            }
+            nav ul{
+                width:100%;
+                height:100vh;
+                background-color: brown;
+                position:fixed;
+                top:80px;
+                left:-100%;
+                transition: 0.5s;
+               }
+            nav ul li{
+               display: block;
+               text-align: center;
+             }
+             nav ul li a{
+                 font-size:1.5rem;
+             }
+        }
+    </style>
+</head>
+<body>
+   <nav>
+       <input type="checkbox" name="" id="check">
+       <label for="check" id="checkbtn">menu</label>
+       <label for="logo" class="logo">webPage</label>
+       <ul>
+           <li><a href="#" class="active">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Contact Us</a></li>
+           <li><a href="#">Gallery</a></li>
+           <li><a href="#">Product</a></li>
+           <li><a href="#">Sing In</a></li>
+           <li><a href="#">Services</a></li>
+       </ul>
+   </nav> 
+</body>
+</html>
