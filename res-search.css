@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav{
+    background-color: #222222;
+    width:100vw;
+    height:10vh;
+   }
+   nav ul{
+       float:right;
+       margin-right: 4rem;
+       list-style-type: none;
+   }
+   nav ul li{
+       display:inline-block;
+       padding:0px 2rem;
+   }
+   nav ul li a{
+       color:#fff;
+       text-decoration: none;
+       text-transform: uppercase;
+       line-height: 4.5rem;
+       padding:0.7rem 1rem;
+       border-radius:10%;
+   }
+   nav ul li a:hover{
+       background-color: red;
+       color:white;
+   }
+   nav ul li span.fas{
+        background-color:#fff;
+        border-radius: 10%;
+        color:rgb(8, 8, 8);
+    }
+    nav ul li input#search{
+        height:22px;
+        
+    }
+    nav label.logo{
+        color:#fff;
+        line-height: 4.5rem;
+        padding-left: 2.7rem;
+        font-size:2.2rem;
+    }
+    #check{
+        display:none;
+    }
+    nav label#checkbtn{
+        color:#fff;
+        float:right;
+        line-height:4rem;
+        margin-right:4rem;
+        display:none;
+    }
+    #check:checked ~ ul{
+        left:0px;
+    }
+   
+    @media screen and (max-width:1382px) {
+       
+        nav label.logo{
+            font-size:1.7rem;
+        }
+        nav ul li{
+            padding:0px 1rem;
+        }
+    }
+  
+   @media screen and (max-width:1074px) {
+    nav label.logo{
+        font-size:1.4rem;
+    }
+    nav ul li{
+         padding:0px .5rem;
+    }  
+   }
+   @media screen and (max-width:957px) {
+    nav label.logo{
+        font-size:1.2rem;
+    }
+    nav ul li{
+        padding:0px 0rem;
+    }   
+   }
+   @media screen and (max-width:826px) {
+    nav label.logo{
+        font-size:1.7rem;
+    }
+    nav label#checkbtn{
+        display:block;
+        font-size:1.5rem;
+    }
+    nav ul{
+        width:100%;
+        height:100vh;
+        background-color: brown;
+        position:fixed;
+        top:4rem;
+        left:-100%;
+        transition: 0.5s;
+    }
+    nav ul li{
+        display:block;
+        text-align: center;
+    }
+    nav ul li a{
+         font-size:1.5rem;
+    }
+    nav ul li a:hover{
+        background-color: red;
+        color:#fff;
+    }
+}
+ 
